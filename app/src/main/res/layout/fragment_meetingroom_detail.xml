@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/meetingroom_detail_fragment"
+    android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/hero_image"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/capacity"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location_head"
+                    android:textSize="18sp"
+                    android:text="Location: "
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/location"
+                        android:textSize="18sp"
+                        android:text=""
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eq_head"
+                        android:textSize="18sp"
+                        android:text="Equipment: "
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/equipment"
+                        android:textSize="18sp"
+                        android:text=""
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/feature_head"
+                        android:textSize="18sp"
+                        android:text="Features: "
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/features"
+                        android:textSize="18sp"
+                        android:text=""
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Services: "
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/services"
+                        android:textSize="18sp"
+                        android:text=""
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/facility_head"
+                        android:textSize="18sp"
+                        android:text="Facilities: "
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+
+                    <ListView
+                        android:id="@+id/facility_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

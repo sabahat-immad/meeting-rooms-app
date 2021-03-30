@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/meetingRoomsListFragment">
+    <fragment
+        android:id="@+id/meetingRoomsListFragment"
+        android:name="saba.qazi.meetingrooms.meetingroomslist.MeetingRoomsListFragment"
+        android:label="MeetingRoomsListFragment" >
+        <action
+            android:id="@+id/action_meetingRoomsListFragment_to_meetingRoomDetailFragment"
+            app:destination="@id/meetingRoomDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/meetingRoomDetailFragment"
+        android:name="saba.qazi.meetingrooms.meetingroomdetail.MeetingRoomDetailFragment"
+        android:label="MeetingRoomDetailFragment" >
+        <argument
+            android:name="key"
+            app:argType="string"
+            app:nullable="false"
+            />
+    </fragment>
+</navigation>
